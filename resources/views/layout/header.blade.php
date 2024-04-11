@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/primevue/core/core.min.js"></script>
+    <script src="https://unpkg.com/primevue/calendar/calendar.min.js"></script>
 </head>
 
 <body>
@@ -16,7 +19,7 @@
             <div class="container flex flex-col flex-wrap items-center p-5 mx-auto md:flex-row">
 
                 <nav class="flex flex-wrap items-center text-base lg:w-2/5 md:ml-auto">
-                    <a href="/" class="mr-5 font-medium hover:text-gray-900">Showcake's</a>
+                    <a href="{{ Route('cake.get') }}" class="mr-5 font-medium hover:text-gray-900">Addcake's</a>
                     <a href="{{ Route('tags.get') }}" class="mr-5 font-medium hover:text-gray-900">Tags</a>
                     <a href="{{ Route('tier.get') }}"class="mr-5 font-medium hover:text-gray-900">Tier</a>
                     <a href="{{ Route('category.get') }}" class="mr-5 font-medium hover:text-gray-900">Category</a>

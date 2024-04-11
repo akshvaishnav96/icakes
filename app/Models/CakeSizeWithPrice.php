@@ -14,7 +14,7 @@ class CakeSizeWithPrice extends Model
 
 
     protected $table = "cake_size_with_prices";
-    protected $primaryKey = "id";
+    protected $primaryKey = "cake_size_with_prices_id";
 
 
 

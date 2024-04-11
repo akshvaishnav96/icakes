@@ -25,6 +25,10 @@ class Flavor_With_Price extends Model
         return $this->hasMany(Flavor::class, 'flavor_id','flavor_id');
     }
 
+    public function cake(){
+        return $this->belongsToMany(Cake::class,"cake_details_merges");
+      }
+
     
 
 }

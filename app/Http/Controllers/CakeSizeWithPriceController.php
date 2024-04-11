@@ -23,7 +23,7 @@ class CakeSizeWithPriceController
         $cakesizewithprice = $cakewithprice->map(function ($item) {
             return [
 
-                'id' => $item['id'],
+                'cake_size_with_prices_id' => $item['cake_size_with_prices_id'],
                 'tier_id' => $item['tier_id'],
                 'size_id' => $item['size_id'],
                 'price' => $item['price'],
@@ -93,7 +93,7 @@ public function editcakesizewithprice($id)
     $cakesizewithprice = $cakewithprice->map(function ($item) {
         return [
 
-            'id' => $item['id'],
+            'cake_size_with_prices_id' => $item['cake_size_with_prices_id'],
             'tier_id' => $item['tier_id'],
             'size_id' => $item['size_id'],
             'price' => $item['price'],

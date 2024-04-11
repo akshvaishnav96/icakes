@@ -65,6 +65,7 @@
             </button>
 
         </form>
+
         @foreach ($cakesizewithprice as $key => $cake)
             <div
                 class="flex flex-col p-8 bg-white shadow-md hover:shodow-lg rounded-2xl my-3 rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md">
@@ -84,9 +85,13 @@
                             </p>
                         </div>
                     </div>
-                    <a href ="/cakesizewithprice/edit/{{ $cake['id'] }}"><button id ="uplodeflavorpriceEditBtn"
+
+
+                    <a href ="/cakesizewithprice/edit/{{ $cake['cake_size_with_prices_id'] }}"><button
+                            id ="uplodeflavorpriceEditBtn"
                             class="flex-no-shrink bg-blue-500 px-5 ml-4 py-2 text-sm shadow-sm hover:shadow-lg font-medium tracking-wider border-2 border-blue-500 text-white rounded-full">Edit</button></a>
-                    <a href = "/cakesizewithprice/{{ $cake['id'] }}"> <button id ="uplodeflavorpriceDelete Btn"
+                    <a href = "/cakesizewithprice/{{ $cake['cake_size_with_prices_id'] }}"> <button
+                            id ="uplodeflavorpriceDelete Btn"
                             class="flex-no-shrink bg-red-500 px-5 ml-4 py-2 text-sm shadow-sm hover:shadow-lg font-medium tracking-wider border-2 border-red-500 text-white rounded-full">Delete</button></a>
                 </div>
 

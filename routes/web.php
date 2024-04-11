@@ -11,6 +11,7 @@ use App\Http\Controllers\SubCategoryController;
 use App\Http\Controllers\FlavorController;
 use App\Http\Controllers\FlavorWithPriceController;
 use App\Http\Controllers\CakeSizeWithPriceController;
+use App\Http\Controllers\CakeController;
 
 
 
@@ -90,6 +91,12 @@ Route::post("/cakesizewithprice",[CakeSizeWithPriceController::class,"uplodecake
 Route::get("/cakesizewithprice/edit/{id}",[CakeSizeWithPriceController::class,"editcakesizewithprice"]);
 Route::patch("/cakesizewithprice/edit/{id}",[CakeSizeWithPriceController::class,"updatecakesizewithprice"]);
 Route::get("/cakesizewithprice/{id}",[CakeSizeWithPriceController::class,"deletecakesizewithprice"]);
+
+Route::get("/cake",[CakeController::class,"cake"])->name("cake.get");
+Route::post("/cake",[CakeController::class,"uplodeCake"])->name("cake.post");
+Route::get("/cake/edit/{id}",[CakeController::class,"editcake"]);
+Route::patch("/cake/edit/{id}",[CakeController::class,"updatecake"]);
+Route::get("/cake/{id}",[CakeController::class,"deletecake"]);
 
 
 

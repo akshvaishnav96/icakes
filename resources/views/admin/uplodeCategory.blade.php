@@ -22,6 +22,8 @@
             </button>
 
         </form>
+
+
         @foreach ($category as $key => $category)
             <div
                 class="flex flex-col p-8 bg-white shadow-md hover:shodow-lg rounded-2xl my-3 rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md">

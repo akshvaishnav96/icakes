@@ -18,4 +18,8 @@ class Tag extends Model
         'tag_name'
     ];
 
+    public function cake(){
+        return $this->belongsToMany(Cake::class,"cake_details_merges");
+      }
+
 }
