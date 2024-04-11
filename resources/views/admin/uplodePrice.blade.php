@@ -1,5 +1,9 @@
 @extends('layout.main')
 
+@push('title')
+    <title>Uplode price</title>
+@endpush
+
 @section('main-section')
     <div class="mx-auto w-full max-w-[550px] bg-white my-5">
 

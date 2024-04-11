@@ -1,5 +1,9 @@
 @extends('layout.main')
 
+@push('title')
+    <title>Uplode Cake</title>
+@endpush
+
 @section('main-section')
 
     <br>
